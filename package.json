@@ -1,0 +1,28 @@
+{
+  "name": "trip_planner",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^4.0.0",
+    "react-router": "^3.0.0",
+    "redux": "^3.0.4",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.4",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.5",
+    "mongoose": "^4.5.9"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.14",
+    "nodemon": "^1.10.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3000"
+}

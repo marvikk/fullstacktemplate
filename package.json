@@ -3,26 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-redux": "^4.0.0",
-    "react-router": "^3.0.0",
-    "redux": "^3.0.4",
+    "axios": "^0.17.0",
     "body-parser": "^1.15.2",
     "cors": "^2.8.4",
     "express": "^4.14.0",
     "mongodb": "^2.2.5",
-    "mongoose": "^4.5.9"
+    "mongoose": "^4.5.9",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^4.0.0",
+    "react-router": "^3.0.0",
+    "redux": "^3.0.4"
   },
   "devDependencies": {
-    "react-scripts": "1.0.14",
-    "nodemon": "^1.10.2"
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.10.2",
+    "react-scripts": "1.0.14"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "react-scripts start"
   },
-  "proxy": "http://localhost:3000"
+  "proxy": "http://localhost:3001/"
 }
